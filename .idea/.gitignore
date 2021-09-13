@@ -1,0 +1,10 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# CodeStream ignored files
+/../../pythonProject\.idea/codestream.xml
+# Datasource local storage ignored files
+/../../../../../../:\Users\Karina\Documents\pythonProject\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
