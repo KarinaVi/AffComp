@@ -12,7 +12,7 @@ face_classifier=cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_defa
 classifier = load_model('EmotionDetectionModel')
 
 class_labels = ['angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']
-cap = cv2.VideoCapture(2) # 0 = standard camera
+cap = cv2.VideoCapture(0) # 0 = standard camera
 
 while True:
     ret, frame = cap.read()

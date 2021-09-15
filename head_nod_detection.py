@@ -8,11 +8,11 @@ out = cv2.VideoWriter('/home/sm/Desktop/nodcontrol.avi', fourcc, 20.0, (640, 480
 # distance function
 # def distance(x, y):
 #     import math
-#     return math.sqrt((x[0] - y[0]) ** 2 + (x[1] - y[1]) ** 2)
+#     return math.sqrt((x[0] - y[0])  2 + (x[1] - y[1])  2)
 
 
 # capture source video
-cap = cv2.VideoCapture(2) # 0, 1, 2
+cap = cv2.VideoCapture(0) # 0, 1, 2
 
 # params for ShiTomasi corner detection
 feature_params = dict(maxCorners=100,
