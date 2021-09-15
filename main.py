@@ -1,3 +1,5 @@
+# loss: 1.2922 - accuracy: 0.5135 - val_loss: 1.0811 - val_accuracy: 0.5883
+
 import keras
 
 from keras.preprocessing.image import ImageDataGenerator
