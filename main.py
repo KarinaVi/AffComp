@@ -10,10 +10,6 @@ import os
 from tensorflow.keras.optimizers import RMSprop, SGD, Adam
 from keras.callbacks import ModelCheckpoint, EarlyStopping, ReduceLROnPlateau
 
-from keras.models import load_model
-from keras.preprocessing.image import img_to_array
-from keras.preprocessing import image
-
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt

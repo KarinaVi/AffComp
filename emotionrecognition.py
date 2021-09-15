@@ -1,22 +1,8 @@
-import keras
-
-from keras.preprocessing.image import ImageDataGenerator
-from keras.models import Sequential
-from keras.layers import Dense, Dropout, Activation, Flatten, BatchNormalization
-from keras.layers import Conv2D, MaxPooling2D
-import os
-
-from tensorflow.keras.optimizers import RMSprop, SGD, Adam
-from keras.callbacks import ModelCheckpoint, EarlyStopping, ReduceLROnPlateau
-
 from keras.models import load_model
 from keras.preprocessing.image import img_to_array
-from keras.preprocessing import image
 
 import cv2
 import numpy as np
-import matplotlib.pyplot as plt
-import tensorflow as tf
 
 
 # Part II: Emotion Detection
@@ -26,7 +12,7 @@ face_classifier=cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_defa
 classifier = load_model('EmotionDetectionModel')
 
 class_labels = ['angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']
-cap = cv2.VideoCapture(1) # 0 = standard camera
+cap = cv2.VideoCapture(2) # 0 = standard camera
 
 while True:
     ret, frame = cap.read()
